@@ -4,6 +4,35 @@
 /* * is a wildcard referring to all elements. */
 * { margin: 0; box-sizing: border-box; } 
 
+/* MY HOMEPAGE */
+/*
+#homepage{
+    background-color: #fff;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+}
+
+#homepage *{
+    font-family: 'Quicksand', sans-serif;
+}
+
+#homepage a:link{
+    color: black;
+}
+/*
+#homepage a:visited{
+    color: rgb(0, 0, 0);
+}
+*/
+/*
+#homepage a:hover{
+    color: rgb(131, 158, 253);
+}
+*/
+/*BODY*/
+
 body { 
     font-size: 16px; 
     line-height: 32px;
@@ -17,21 +46,32 @@ h1 {
     color: #fff; /* #xxxxxx */;
 }
 
+
 h2 {
     font-size: 1.rem; /* x.xrem */;
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
 
+#homepage footer{
+    padding: 5px 20px;
+    margin-top: 30px;
+    background-color: rgba(12, 71, 47);
+    border-radius: 10px;
+    color: white;
+}
+
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
+    /*border-radius: 10px;*/
     max-width: 800px; /* xxxpx (px = pixel is a unit of measure)  */;
 }
 header, footer, footer a {
     text-align: center;
     background-color: rgb(12, 71, 47); /* */;
     color: whitesmoke;
+    border-radius: 10px;
     /* Comment */
 }
 
@@ -39,6 +79,7 @@ header img {
     width: 6em; /*  */;
     height: auto;
     float: right;
+    border-radius: 10px;
 }
 
 
@@ -52,4 +93,16 @@ ul {
     margin: 0 auto;
     color: rgb(12, 71, 47);
     max-width: 600px;
+}
+
+
+#homepage footer a:link{
+    color: white;
+}
+
+#homepage footer a:visited{
+    color: white;
+}
+#homepage footer a:hover{
+    color: rgba(255, 255, 255, 0.5);
 }

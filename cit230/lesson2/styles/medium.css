@@ -69,15 +69,4 @@
 
     }
     
-    #button {
-        line-height: px;
-        /* width: 18px; */
-        font-size: 10pt;
-        font-family: tahoma;
-        margin-top: -80px;
-        margin-right: 21px; 
-        position:absolute;
-        top:21;
-        right:0;
-    }
 }

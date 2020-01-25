@@ -52,7 +52,7 @@ nav a{
     /* transition: width 0.7s; */
 }
 nav a:hover{
-    text-decoration: ;
+    text-decoration: none;
     color: white;
     background-color:rgb(245,204,225);
     letter-spacing: 6pt;

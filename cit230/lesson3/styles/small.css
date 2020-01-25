@@ -109,22 +109,22 @@ section{
 
 
 /* -------TYPOGRAPHY PAGE------- */
-#type-sample h1{
+#typo-sample h1{
     margin-top: 0px;
 } 
 
-#type-sample{
+#typo-sample{
     margin-top: -30pt;
 
 } 
 
-#type-sample ul{
+#typo-sample ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     max-width: 300pt;
 }
-#type-sample li{
+#typo-sample li{
     display: block;
     padding: 10pt;
     text-transform: uppercase;
@@ -134,7 +134,7 @@ section{
     color: rgb(49, 49, 49);
 }
 
-#type-sample .foot-nav{
+#typo-sample .foot-nav{
     background-color: #353535;
     color: white;
     text-transform: capitalize;

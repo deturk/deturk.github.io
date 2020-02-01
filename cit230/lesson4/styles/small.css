@@ -6,7 +6,7 @@
 
 body{
     min-width: 300px;
-    background-image: url(/lesson4/images/prest.background_img.jpg);
+    background-image: url("/lesson4/images/prest-background.jpg");
     background-size: cover;
     background-position: center bottom;
 }

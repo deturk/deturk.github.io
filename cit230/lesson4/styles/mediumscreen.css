@@ -1,0 +1,50 @@
+/* TABLET VIEW */
+
+main{
+    max-width: 1000px;
+    margin: auto;
+}
+@media only screen and (min-width: 55em)and (max-width: 65em){
+
+    header li{
+        display: inline !important;
+    }
+
+    header li:first-child{
+        display: none !important;
+    }
+
+    header nav{
+        background-color: #353535;
+        padding: 1px;
+    }
+    header nav a{
+        display: inline;    
+        border-top: none;    
+    }
+
+    nav a:hover{
+        letter-spacing: 3pt !important;
+        }
+
+    .navigation{
+        margin: .65em 0;
+    }
+    
+}
+
+@media only screen and (min-width: 30em){
+
+    main .forecast{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media only screen and (min-width: 55em){
+
+    .section-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

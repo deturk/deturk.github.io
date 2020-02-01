@@ -220,4 +220,13 @@ section{
 }
 
 /* footer */
+footer {
+    background-color: #ffffff;
+    /* color: white; */
+    justify-content: center;
+    text-align: center;
+
+    /* footer */
+    
+}
 

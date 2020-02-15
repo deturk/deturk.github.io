@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;  
+}
+
+body{
+    min-width: 300px;
+    background-color: rgb(161, 197, 231);
+    background-size: cover;
+    background-position: center bottom;
+}
+    aside {
+        text-align: center; 
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        /* text-decoration: none; */
+        display: block;
+    padding: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 3pt;
+    /* border-top: 1px rgb(114, 114, 114) solid; */
+    background-color: rgb(57,72,87);
+    text-decoration: none;
+    color: white;
+    font-size: .8em;
+    transition: 0.7s;
+       
+    }
+
+    /* general header rules  */
+    header {
+        max-width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(57,72,87);
+    }
+
+ 
+        header img {
+            width: 300px;
+    }
+    header .side-logo{
+        display: none;
+    }
+
+
+    /* general nav rules */
+    nav {
+        background-color: rgb(57,72,87);;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        padding: 0%;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav h3 {
+        margin: 0em;
+        padding: .5em;
+        color: white;
+    }
+
+    nav div:hover {
+        border-bottom: 2px solid #233329;
+    }
+
+    /* general main rules */
+    main {
+        margin: 1em auto;
+        padding: .5em;
+        max-width: 1280px;
+        background-color: rgba(255, 255, 255, 0.4);
+        text-align: center;
+    }
+
+    section {
+        margin: .5em;
+        padding: .5em;
+        background-color: whitesmoke;
+        border-radius: 0pt 10pt 10pt 10pt;
+    }
+
+    main p {
+        text-align: left;
+    }
+
+    table, tr, th, td {
+        padding: 1em;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    table {
+        margin: 0 auto;
+    }
+
+    /* general footer rules */
+    /* footer {
+        padding-top: .5em;
+        padding-bottom: .5em;
+        width: 100%;
+        background-color: #63A46C;
+        text-align: center;
+    } */
+
+    address {
+        margin: 1em;
+    }
+
+    iframe {
+        display: none;
+    }
+
+/* class selectors */
+    .navigation li:first-child{
+        display: block;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .responsive li {
+        display: block;
+    }
+
+    .active {
+        background-color:  rgb(57,72,87);
+        /* border-bottom: 3px solid #233329; */
+    }
+
+    .weather-summary {
+        /* padding: 1em; */
+        position: absolute;
+        top: 1.5em;
+    left: 1.5em;
+    /* background-color: rgba(140, 141, 142, 0.6); */
+    color: white;
+    font-weight: bolder;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10pt;
+    color: white;
+    display: inline-block;
+    width: 200px;
+    }
+
+    .weather-summary h3 {
+        margin: 0;
+    }
+
+/* id selectors */
+
+    #hero {
+        position: relative;
+    }
+
+    #hero-image {
+        max-width: 100%;
+    }
+
+    #article-image {
+        margin: 1em;
+        max-width: 25%;
+        min-width: 12em;
+        float: right;
+    }
+
+    #fiveday-forcast {
+        display: none;
+    }
+
+    footer{
+        background-color: #393939;
+        margin:0px;
+        padding: 10pt;
+        color: white;
+        text-align: center;
+    }
+    
+    footer p{
+        margin:5px;
+    }
+
+    header .side-logo{
+        display: none;
+    }
+    .responsive li {
+        display: block;
+        opacity: 0;
+        animation-name: menu;
+        animation-duration: .6s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+            @keyframes menu{
+                0%{
+                    opacity: 1
+                }
+                    
+                100%{
+                    opacity: 1
+                }
+            }

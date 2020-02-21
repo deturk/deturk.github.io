@@ -1,0 +1,34 @@
+.pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+picture {
+    margin: 20px;
+}
+
+picture img[data-src] {
+    filter: blur(0.2em);
+}
+
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+footer{
+    background-color: #393939;
+    margin:0px;
+    padding: 10pt;
+    color: white;
+    text-align: center;
+}
+
+footer p{
+    margin:5px;
+}

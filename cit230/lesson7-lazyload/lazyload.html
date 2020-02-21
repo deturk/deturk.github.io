@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Lazy load</title>
+    <link rel="stylesheet" href="styles/lazyload.css">  
+</head>
+<body>
+    <h1>Lazy Load </h1>
+    <section class="pictures">
+        <!-- Calling Random Images With Accurate Size -->
+    <picture>
+        <img src='https://via.placeholder.com/150' data-src= "https://picsum.photos/300/400" alt="random picture">
+    </picture>
+    <picture>
+        <img src='https://via.placeholder.com/150' data-src="https://picsum.photos/300/401" alt="random picture">
+    </picture>
+    <picture>
+        <img src='https://via.placeholder.com/150' data-src="https://picsum.photos/300/402" alt="random picture">
+    </picture>
+    <picture>
+        <img src='https://via.placeholder.com/150' data-src="https://picsum.photos/300/403" alt="random picture">
+    </picture>
+    <picture>
+        <img src='https://via.placeholder.com/150' data-src="https://picsum.photos/300/404" alt="random picture">
+    </picture>
+    <picture>
+        <img src='https://via.placeholder.com/150' data-src="https://picsum.photos/300/405" alt="random picture">
+    </picture>
+    </section>
+</body>
+
+<footer>
+    <p>&copy; &#10052; Lazy Load |<span> Elijah De-Graft Turkson &#10052</span></p>
+    <p><span id="current-date"></span></p>
+    
+    <a href=""></a href><p>Last Updated:</p><span id="LastModified"></span>
+</footer>
+
+<link rel="stylesheet" href="scripts/lazyloads.js">
+<script src="scripts/lazyloads.js" defer></script>
+<script src="scripts/lastmodified.js"></script>
+<script src="scripts/date.js"></script>
+</html>

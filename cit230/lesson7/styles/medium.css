@@ -1,0 +1,124 @@
+/* TABLET VIEW */
+@media only screen and (min-width: 55em)and (max-width: 67em){
+
+    .navigation li{
+        display: inline;
+    }
+
+    .navigation li:first-child{
+        display: none;
+    }
+
+    header nav{
+        background-color: #353535;
+        padding: 1px;
+    }
+
+    header nav a{
+        display: inline;    
+        border-top: none;    
+    }
+
+    nav a:hover{
+        background-color:rgb(245,204,225);
+        letter-spacing: 3pt;
+        font-weight: 800;
+        letter-spacing: 3pt !important;
+    }
+
+    .navigation{
+        margin: .65em 0;
+
+    }
+    
+}
+@media only screen and (min-width: 35em) and (max-width: 55em){
+
+    .section-container article img{
+        width: 250px;
+        height: auto;
+    }
+    #news article div{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10pt;
+        vertical-align: top;
+        
+    }
+    #news p{
+        margin-top: 0px;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 55em){
+
+    .section-container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 30pt;
+    }
+
+    #news{
+        grid-row: 1/4;
+        grid-column: 1/2;
+    }
+
+    #todolist-container{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+
+    #todolist-container > article{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    
+    #todo-img{
+        grid-column: 2/3;
+    }
+
+
+    #contact{
+        grid-column: 1/3;
+        max-width: 1000px;
+    }
+
+    #contact article{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    
+    #contact iframe{
+        display: block;
+    }
+
+    #heroimg{
+            /* background-image: url("/cit230/lesson5/images/preston-cover-pano.jpg"); */
+            background-position: center; 
+            min-height: 150px;
+            display: grid;
+            grid-template-columns: 2.5fr 1fr;
+    }
+    #heroimg h1{
+        height: 1.2em;
+    }
+    .forecast5{
+        display: block;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 600px){
+
+    #gallery-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+

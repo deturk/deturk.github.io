@@ -1,9 +1,0 @@
-img[data-src] {
-    filter: blur(0.2);
-}
-
-img[data-src] {
-    filter: blur(0.2);
-    transition: filter 0.5s;
-}
-

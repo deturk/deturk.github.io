@@ -1,0 +1,46 @@
+
+
+thead {
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+    font-family: 'ubuntu', sans-serif;
+}
+
+body{
+    font-family: 'ubuntu', sans-serif;
+}
+
+tfoot td{
+    font-size: .7em;
+}
+
+tr {
+    background-color: #e7f0ed;
+}
+
+tr:nth-child(even){
+    background-color:#e7ffed;
+}
+
+thead td,tfoot td {
+    background-color: #7fb9c2;
+}
+
+th, #november-sales-goal {
+    background-color: #628ca6;
+    color: #fff;
+}
+
+table {
+    border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+/* #e7f0ed,  (data rows) and ,  */

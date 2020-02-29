@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="images/Theweathermanlogo-png.png">
+        <title>Gallery | Super Accurate Weather</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+    </head>
+    <body id="storm-center">
+        
+        <!-- two layers of Image-->
+          <div class="bg"></div>
+          <div class="lightning flashit"></div>
+        <!--End of two layers of Image-->
+
+        <aside>
+            <p> Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion. </p>
+        </aside>
+        <header>
+            <img class="top-logo" src="images/Theweathermanlogo-side2.png">
+            <img class="side-logo" src="images/Theweathermanlogo-side2.png">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="preston-8.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter-8.html" class="active-page">Storm Center</a></li>
+                    <li><a href="gallery-8.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main >
+            <h1>Report a Storm!</h1>
+            <form action="thanks.html" method="GET">
+                <p>Fields with * are required.</p>
+                <div>
+                    <label for="fullName">Full Name:* </label>
+                    <input type="text" id="fullName" name="fullName" required pattern ="[A-Za-z ]{5,}">
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="user@email.com" >
+                </div>
+                <div>
+                    <label for="phone">Phone:* </label>
+                    <input type="tel" id="phone" name="phone" required >
+                </div>
+                <div>
+                    <label for="zipCode">Zip Code:* </label>
+                    <input type="number" id="zipCode" name="zipCode" required >
+                </div>
+                <div>
+                    <label for="stormDate">Storm Date: </label>
+                    <input type="date" id="stormDate" name="stormDate">
+                </div>
+                <div>
+                    <label for="stormType">Storm Type: </label>
+                    <input list="stormType">
+                    <datalist id="stormType">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </div>
+                <div>
+                    <label for="stormSeverity">Storm Severity: <strong id="ratingvalue">5</strong></label>
+                    <input type="range" id="stormSeverity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+				    
+                </div>
+                <div>
+                    <label for="stormRegion">Storm Region: </label>
+                    <select name="stormRegion" id="stormRegion">
+                        <option selected disabled>Select Region ...</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Sugar City">Sugar City</option>
+                    </select>                    
+                </div>
+                <div>
+                    <label for="danger">Are you in danger?</label>
+                    <input name="danger" type="radio" id="yes" value="Yes"><label for="yes" class="radio-button"> Yes</label>
+                    <input name="danger" type="radio" id="no" value="No"><label for="no" class="radio-button"> No</label>
+                    <input name="danger" type="radio" id="maybe" value="Maybe"><label for="maybe" class="radio-button"> Maybe</label>
+                </div>
+                <div>
+                    <label for="comments">Comments:</label>
+                    <textarea rows="4" cols="30">
+                    </textarea>                
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+            <!-- <div>
+                <video autoplay muted loop id="myimg">
+                    <source src="images/Lightining.jpg" type="Lightining">
+                </video>
+            </div> -->
+            
+        </main>
+        <!-- Mine Footer Normal Scripts-->
+        <footer>
+            <p>&copy; &#10052; The Weather Man |<span> Elijah De-Graft Turkson &#10052</span></p>
+            <p><span id="current-date"></span></p>
+            <a href=""></a href><p>Last Updated:</p><span id="LastModified"></span>
+        </footer>
+        <!-- NORMAL SCRIPT FILES -->
+        <script src="scripts/forms.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/date.js"></script>
+        <script src="scripts/lastmodified.js"></script>
+
+        <script src="scripts/lazy-loads.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="scripts/fontloader.js"></script>
+    </body>
+</html>

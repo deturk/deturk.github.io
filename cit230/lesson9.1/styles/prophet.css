@@ -1,0 +1,36 @@
+article {
+    background-color: #005b80;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+img{
+    width: 200px;
+    box-shadow: 10px 10px 8px;
+}
+
+section{
+    background-color: #bbebff;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media only screen and  (min-width: 32.5em) {
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 60em){
+    section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+footer {
+    text-align: center;
+}

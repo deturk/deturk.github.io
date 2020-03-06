@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="images/Theweathermanlogo-png.png">
+        <title>The Weather Man | Be Alert through Us</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+    </head>
+    <body id="home">
+
+        <header>
+            <img class="top-logo" src="images/Theweathermanlogo-side2.png">
+            <img class="side-logo" src="images/Theweathermanlogo-side2.png">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="../lesson9/index.html">Home</a></li>
+                    <li><a href="../lesson6/preston-6.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="../lesson8/stormcenter.html" class="active-page">Storm Center</a></li>
+                    <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>
+                The Weather Man!
+            </h1>
+            <section class="town-data">
+                <figure>
+                    <img id = "fishHavenImg">
+                        <h2>
+                            Fish Haven
+                        </h2>
+                        <h3 id="fishHavenMotto"></h3>
+                        <figcaption>
+
+                        <div>
+                            <h4>Year</br>Founded</h4>
+                            <p id="fishHavenYear"></p>
+                        </div>
+                        <div>
+                            <h4>Current</br>Population</h4>
+                            <p id="fishHavenPopulation" class ="counter"></p>
+                        </div>
+                        <div>
+                            <h4>Annual</br>Rain Fall</h4>
+                            <p id="fishHavenRain"></p>
+                        </div>
+                    </figcaption>
+                  
+                </figure>
+
+                <figure>
+                    <img id = "prestonImg">
+                        <h2>
+                            Preston
+                        </h2>
+                        <h3 id="prestonMotto"></h3>
+                        <figcaption>
+
+                        <div>
+                            <h4>Year</br>Founded</h4>
+                            <p id="prestonYear"></p>
+                        </div>
+                        <div>
+                            <h4>Current</br>Population</h4>
+                            <p id="prestonPopulation" class ="counter"></p>
+                        </div>
+                        <div>
+                            <h4>Annual</br>Rain Fall</h4>
+                            <p id="prestonRain"></p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img id = "sodaSpringsImg">
+                    
+                    <h2>
+                        Soda Springs
+                    </h2>
+                    <h3 id="sodaSpringsMotto"></h3>
+                    <figcaption>
+                    <div>
+                        <h4>Year</br>Founded</h4>
+                        <p id="sodaSpringsYear"></p>
+                    </div>
+                    <div>
+                        <h4>Current</br>Population</h4>
+                        <p id="sodaSpringsPopulation" class ="counter"></p>
+                    </div>
+                    <div>
+                        <h4>Annual</br>Rain Fall</h4>
+                        <p id="sodaSpringsRain" ></p>
+                    </div>
+                 </figcaption>
+                </figure>
+                
+            </section>
+        </main>
+        <footer>
+            <p>&copy; &#10052; The Weather Man |<span> Elijah De-Graft Turkson &#10052</span></p>
+            <p><span id="current-date"></span></p>
+            <a href=""></a href><p>Last Updated:</p><span id="LastModified"></span>
+        </footer>
+        <!-- NORMAL SCRIPT FILES -->
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/date.js"></script>
+        <script src="scripts/lastmodified.js"></script>
+
+        <script src="scripts/lazy-loads.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="scripts/font.js"></script>
+        <!-- NORMAL SCRIPT FILES -->
+       
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="scripts/town-data.js"></script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+       
+
+
+    </body>
+</html>

@@ -1,0 +1,724 @@
+/* @import url('https://fonts.googleapis.com/css?family=Lato:100,400,500,700,900&display=swap'); */
+
+*{
+    font-family: 'Lato', sans-serif;  
+}
+
+/* EXTRA WHITE SPACE */
+
+html {  box-sizing: border-box; }
+*, *:before, *:after {  box-sizing: inherit; }
+
+.navigation{
+    font-size: 0px;
+}
+.navigation > *{
+    font-size: 1rem;
+}
+
+#pancakes {
+    background-color: rgb(0, 157, 230);
+    padding: 1px;
+    text-align: center;
+    color: white;
+    font-size:1em;
+    font-weight: 700;
+}
+
+.hidden{
+    display: none;
+}
+
+.active-page{
+    font-weight: 700;
+}
+
+body{
+    min-width: 300px;
+    background-image: url("/cit230/lesson11/images/background.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+
+    /* background: #00b4ff; */
+	color: #333;
+	font: 100% Arial, Sans Serif;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#background-wrap {
+    bottom: 0;
+	left: 0;
+	padding-top: 50px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+/* KEYFRAMES */
+
+@-webkit-keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-moz-keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+	-webkit-animation: animateCloud 35s linear infinite;
+	-moz-animation: animateCloud 35s linear infinite;
+	animation: animateCloud 35s linear infinite;
+	
+	-webkit-transform: scale(0.65);
+	-moz-transform: scale(0.65);
+	transform: scale(0.65);
+}
+
+.x2 {
+	-webkit-animation: animateCloud 20s linear infinite;
+	-moz-animation: animateCloud 20s linear infinite;
+	animation: animateCloud 20s linear infinite;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x3 {
+	-webkit-animation: animateCloud 30s linear infinite;
+	-moz-animation: animateCloud 30s linear infinite;
+	animation: animateCloud 30s linear infinite;
+	
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.x4 {
+	-webkit-animation: animateCloud 18s linear infinite;
+	-moz-animation: animateCloud 18s linear infinite;
+	animation: animateCloud 18s linear infinite;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x5 {
+	-webkit-animation: animateCloud 25s linear infinite;
+	-moz-animation: animateCloud 25s linear infinite;
+	animation: animateCloud 25s linear infinite;
+	
+	-webkit-transform: scale(0.55);
+	-moz-transform: scale(0.55);
+	transform: scale(0.55);
+}
+
+/* OBJECTS */
+
+.cloud {
+	background: #fff;
+	background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
+	background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
+	
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	
+	-webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+
+	height: 120px;
+	position: relative;
+	width: 350px;
+}
+
+.cloud:after, .cloud:before {
+    background: #fff;
+	content: '';
+	position: absolute;
+	z-indeX: -1;
+}
+
+.cloud:after {
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+
+	height: 100px;
+	left: 50px;
+	top: -50px;
+	width: 100px;
+}
+
+.cloud:before {
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+	border-radius: 200px;
+
+	width: 180px;
+	height: 180px;
+	right: 50px;
+	top: -90px;
+
+
+}
+
+header{
+    text-align: center;
+    background-color: rgb(57,72,87);
+    
+}
+header img{
+    width: 300px;
+}
+
+header .side-logo{
+    display: none;
+}
+
+header nav ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0 !important;
+    
+}
+
+header nav a{
+    display: block;
+    padding: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 3pt;
+    border-top: 1px rgb(114, 114, 114) solid;
+    background-color: rgb(57,72,87);
+    text-decoration: none;
+    color: white;
+    font-size: .8em;
+    transition: 0.7s;
+}
+
+header nav a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(245, 212, 212);
+    letter-spacing: 6pt;
+
+}
+
+nav a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+    opacity: 0;
+    animation-name: menu;
+    animation-duration: .6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+        @keyframes menu{
+            0%{
+                opacity: 0
+            }
+                
+            100%{
+                opacity: 1
+            }
+        }
+
+        
+footer{
+    background-color: #393939;
+    margin: 0px;
+    padding: 10pt;
+    color: white;
+    text-align: center;
+}
+
+footer p{
+    margin:5px;
+}
+
+
+/*-----------------HOME PAGE------------------ */
+
+#home main{
+    max-width: 1200px;
+    margin: 20px auto 50px auto;
+    text-align: center;
+}
+
+#home h1{
+    font-size: 3em;
+    margin: auto;
+    padding: 10px 40px;
+}
+
+.town-data{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px auto;
+}
+
+.town-data figure{
+    background-color: rgb(248, 248, 248);
+    width: 350px;
+    border-radius: 5pt;
+    margin: 20px auto;
+    box-shadow: 0pt 0pt 20pt rgba(0, 0, 0, 0.3);
+
+    transition: .3s ease-in-out;
+    cursor: pointer;
+
+}
+
+.town-data figure:hover{
+    transform: scale(1.08);
+    transition: .3s ease-in-out;
+}
+
+
+.town-data img{
+    width: 100%;
+    border-radius: 5pt 5pt 0 0;
+}
+
+.town-data h2{
+    font-size: 2.8em;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+.town-data h3{
+    font-size: 1em;
+    height: 2em;
+    font-weight: 700;
+    margin-top: 5pt;
+    font-style: italic;
+    color: rgb(37, 37, 37);
+    padding: 0 50px;
+}
+
+.town-data figcaption{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 10px 30px;
+}
+
+.town-data h4{
+    font-size: .7em;
+    letter-spacing: 1pt;
+    font-weight: 700;
+    margin-top: 5pt;
+    text-transform: uppercase;
+    height: 1.6em;
+    vertical-align: middle;
+    color: rgb(160, 160, 160);
+
+}
+
+.town-data p{
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: 0;
+    color: rgb(105, 105, 105);
+}
+
+/*-----------------PRESTON PAGE------------------ */
+
+#preston main{
+    padding:25px;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+
+}
+
+
+#heroimg{
+/* The image used */
+    /* background-image: url("/cit230/lesson5/images/preston-cover.jpg"); */
+    padding: 25px;
+
+    min-height: 200px; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+#heroimg h1{
+    font-size: 3.6em;
+    font-weight: 700;
+    border-left: .2em solid rgb(0, 157, 230);
+    padding-left: .3em;
+    margin-top: 0px;
+    color: white;
+    text-shadow: 2px 2px 15px  #00000062;
+  
+}
+
+#heroimg section{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10pt;
+    color: white;
+    display: inline-block;
+    width: 200px;
+}
+
+#heroimg h2{
+    text-transform: uppercase;
+    font-size: .9em;
+    margin-top: 0px;
+    border-bottom: white 1px solid;
+}
+
+#heroimg p{
+    margin: 2px;
+    font-size: .8em;
+    letter-spacing: 1pt;
+
+}
+
+#weather-icon{
+    margin: -10px 0;
+}
+
+main a:link{
+    text-decoration: none;
+    color: black;
+}
+
+main a:hover{
+    text-decoration: none;
+    color: white;
+    background-color:rgb(245,204,225);
+    letter-spacing: 6pt;
+}
+
+main a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.forecast5{
+    display: none;
+}
+
+#digital-clock{
+    font-size: 2em;
+    margin: 0 0 10 0;
+}
+
+
+/* #weather-map{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 4px #353535 solid;
+    background-image: url("/cit230/lesson7/images/weather-map.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+#weather-map img{
+    width: 100%;
+}
+
+
+
+#todo-list{
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+#todo-list a:hover{
+    color: rgb(0, 157, 230);
+}
+
+
+#todo-img img{
+    width: 100%;
+}
+#todo-info p{
+   font-size: .8em;
+   margin: 0;
+}
+
+#todo-info h3{
+    padding: 3pt 0pt;
+    display: inline-block;
+    letter-spacing: 2pt;
+    font-weight: 700;;
+}
+#todo-info h4{
+    margin-top:5pt;
+}
+
+.crossed-out{
+    color: rgb(177, 177, 177);
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+.section-container section{
+    margin-bottom: 30pt;
+}
+
+
+.section-container h2{
+    text-transform: uppercase;
+    letter-spacing: 3pt;
+    font-size: 1em;
+    font-weight: 700;
+    display: inline-block;
+    background-color: #353535;
+    color: white;
+    padding: 5pt 10pt;
+    max-width: 350px;
+    border-left: .5em solid rgb(0, 157, 230);
+
+}
+
+.section-container td, .section-container th{
+    text-align: left;
+    padding: 8pt;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.section-container article{
+    padding: 25pt 15pt 15pt;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: -25pt;
+    border-radius: 0pt 10pt 10pt 10pt;
+    line-height: 1.3em;
+}
+
+.article-date{
+   margin-top: 0px;
+   padding-bottom: 10px;
+   display: block;
+   font-weight: 700;
+}
+
+.section-container article img{
+    width: 100%;
+}
+
+
+#contact iframe{
+    display: none;
+}
+
+.section-container h3{
+    font-size: 1em;
+    margin: 0px;
+}
+.section-container address{
+    font-style: normal;
+    font-size: .9em;
+    padding: 10px;
+}
+
+
+/* ANIMATED */
+
+
+
+/* LIVE COVER STYLE*/
+
+/* .sunrise{
+    background-image: url("/cit230/lesson7/images/live-cover/preston-sunrise.jpg");
+}
+
+.sunrise-pano{
+    background-image: url("/cit230/lesson7/images/live-cover/preston-sunrise-pano.jpg");
+}
+
+.daytime{
+    background-image: url("/cit230/lesson7/images/live-cover/preston-daytime.jpg");
+}
+
+.daytime-pano{
+    background-image: url("/cit230/lesson7/images/live-cover/preston-daytime-pano.jpg");
+}
+
+.sunset{
+    background-image: url("/cit230/lesson7/images/live-cover/preston-sunset.jpg");
+}
+
+.sunset-pano{
+    background-image: url("/cit230/lesson7/images/live-cover/preston-sunset-pano.jpg");
+}
+
+.night{
+    background-image: url("/cit230/lesson7/images/live-cover/preston-night.jpg");
+}
+
+.night-pano{
+    background-image: url("/cit230/lesson7/images/live-cover/preston-night-pano.jpg");
+}
+
+/*-----------------GALLERY PAGE------------------ */
+
+
+#weather-gallery-title{
+    /* background-image: url("/cit230/lesson7/images/weather-gallery-cover.jpg"); */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+
+} */
+
+#gallery h1{
+    font-size: 3.6em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0px;
+    padding:100px 10px;
+    color: white;
+    text-shadow: 0px 0px 30px #000000b6;
+}
+
+#gallery-container{
+    display: grid;
+    margin-top: 20px;
+}
+
+#gallery-container figure{
+    margin: 20px;
+    position: relative;
+}
+
+#gallery-container img{
+    width: 100%;    
+}
+
+#gallery-container figcaption{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 25px;
+    position: absolute;
+    bottom: 4px;
+}
+
+/*-----------------STORM CENTER------------------ */
+
+#storm-center main{
+    padding:25px;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+
+}
+
+#storm-center h1{
+    font-size: 3.6em;
+    font-weight: 700;
+    /* border-left: .2em solid rgb(0, 157, 230); */
+    padding-left: .3em;
+    margin-top: 0px;
+    color: white;
+    text-shadow: 2px 2px 15px  #00000062;
+  
+}
+
+#storm-center form{
+    margin: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    display: inline-block;
+}
+
+#storm-center form div{
+    margin: 10px;
+}
+
+#storm-center form p{
+    font-size: .7em;
+    font-style: italic ;
+}
+
+#storm-center form label{
+    display: inline-block;
+    width: 150px;
+    vertical-align: top;
+
+}
+
+#storm-center form .radio-button{
+    width: 30px;
+}
+
+/* #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+    overflow: hidden;
+} */
+
+#thanks section{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    height: 600px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    font-weight: 700;
+    letter-spacing: 1pt;
+    font-size: 1.3em;
+}

@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Weather Man | Be Alert through Us</title>
     <link rel="shortcut icon" href="images/Theweathermanlogo-png.png">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles2/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles2/small.css">
+    <link rel="stylesheet" href="styles2/medium.css">
+    <link rel="stylesheet" href="styles2/large.css">
 </head>
 
 <body>
@@ -19,80 +19,49 @@
         <p> Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion. </p>
     </aside>
     <header>
-        <img class="top-logo" src="images/Theweathermanlogo-png.png">
+        <img class="top-logo" src="images/Theweathermanlogo-side1.png">
         <img class="side-logo" src="images/Theweathermanlogo-side2.png">
     </header>
     <nav>
-        
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li>
-                <a href="#">
-                    <div class="lnk">
-                        <h3>Home</h3>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="lnk">
-                        <h3>Preston, Idaho</h3>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="lnk">
-                        <h3>Soda Springs</h3>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="lnk">
-                        <h3>Fish Haven</h3>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="lnk">
-                        <h3>Storm Center</h3>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="lnk">
-                        <h3>Gallery</h3>
-                    </div>
-                </a>
-            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Preston, Idaho</h1>
+        <h1>Fish Haven</h1>
         <section id="hero">
             <!-- Hero Image -->
-            <img id="hero-image" src="images/hero image.jpeg" alt="Sunset">
+            <picture id="hero-picture">
+                <source srcset="images/franklinOriginal-small.jpg" media="(max-width: 400px)">
+                <source srcset="images/franklinOriginal-medium.jpg" media="(max-width: 800px)">
+                <source srcset="images/franklinOriginalsize.jpg" media="(min-width: 801px)">
+                <img id="hero-image" src="images/sunsethero.jpeg" alt="sunsethero">
+            </picture>
+            <!-- <img id="hero-image" src="images/Gotland,Sweden.jpg" alt="Volcanic Lightening"> -->
             <article class="weather-summary">
 
                 <h3>Weather Summary</h3>
                 <div>
 
                     <span>Current Temperature:</span>
-                    <span id="current-temp">50°</span>
+                    <span id="current-temp"></span>
 
                 </div>
                 <div>
                     <span>Wind Speed:</span>
-                    <span id="wind-speed">5mph</span>
+                    <span id="wind-speed"></span>
                 </div>
-                <div>
-                    <span>Humidity:</span>
-                    <span id="humidity">30%</span>
+                <div id="wind-chill-div">
+                    <span>Wind Chill:</span>
+                    <span id="wind-chill"></span>
                 </div>
-                <p id="wind-chill"><b>Wind Chill:</b> 31°F</p>
+
             </article>
         </section>
         <section id="fiveday-forcast">
@@ -118,10 +87,16 @@
                     </tr>
             </table>
         </section>
+        <!-- adjust to correct city -->
+        <section id="upcoming-events">
+            <h2>Upcoming Events: </h2>
+            <ul id="events">
+            </ul>
+        </section>
         <section>
             <!-- Article for news or something else -->
             <h2>Article</h2>
-            <img src="images/House-Preston-Napoleon-Dynamite.jpg"
+             <img src="images/House-Preston-Napoleon-Dynamite.jpg"
                 alt="Napoleon-Dynamite House Preston, Idaho" id="article-image">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -152,7 +127,7 @@
                    Wakandan Street <br> Preston, ID 834545 <br> Phone#: 208-419-6666 <br> deturkfoundation@domain.com
                 </address>
                 <iframe
-                 width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=300&amp;hl=en&amp;q=570%20S%202nd%20W%2C%20Apartment%204+(The%20Weather%20Man)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">latitude longitude finder</a></iframe>
+                width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=300&amp;hl=en&amp;q=570%20S%202nd%20W%2C%20Apartment%204+(The%20Weather%20Man)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">latitude longitude finder</a></iframe>
                 </iframe>
             </div>
         </section>
@@ -161,13 +136,14 @@
     <footer>
         <p>&copy; &#10052; The Weather Man |<span> Elijah De-Graft Turkson &#10052</span></p>
         <p><span id="current-date"></span></p>
+        <p>Last Updated:</p><span id="LastModified"></span>
         
-        <a href=""></a href><p>Last Updated:</p><span id="LastModified"></span>
+        <!-- <a href=""></a href> -->
     </footer>
+    <script src="scripts/fontloader.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/date.js"></script>
     <script src="scripts/lastmodified.js"></script>
-    <script src="scripts/preston.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/fishhaven.js"></script>
 </body>
-
-</html>

@@ -43,7 +43,7 @@ html {  box-sizing: border-box; }
 
 body{
     min-width: 300px;
-    background-image: url("/cit230/lesson11/images/background.jpg");
+    /* background-image: url("/cit230/lesson11/images/background.jpg"); */
     background-size: cover;
     background-position: center bottom;
     background-attachment: fixed;
